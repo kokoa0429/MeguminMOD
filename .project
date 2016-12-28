@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>MeguminMOD</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>common</name>
+			<type>2</type>
+			<location>D:/C/desktop/meguminMOD/common</location>
+		</link>
+		<link>
+			<name>jars</name>
+			<type>2</type>
+			<location>D:/C/desktop/meguminMOD/jars</location>
+		</link>
+		<link>
+			<name>lib</name>
+			<type>2</type>
+			<location>D:/C/desktop/meguminMOD/lib</location>
+		</link>
+		<link>
+			<name>src</name>
+			<type>2</type>
+			<location>D:/C/desktop/meguminMOD/src</location>
+		</link>
+	</linkedResources>
+</projectDescription>
