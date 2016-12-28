@@ -2,7 +2,8 @@ package com.google.kobatokokoa0429.Entity;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
+
+import com.google.kobatokokoa0429.Etc.Explosion;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -19,7 +20,6 @@ import net.minecraft.entity.passive.EntityTameable;
 import net.minecraft.entity.passive.EntityVillager;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
-import net.minecraft.init.Blocks;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.play.server.S2BPacketChangeGameState;
 import net.minecraft.util.AxisAlignedBB;
@@ -472,15 +472,12 @@ public class EntityBarret extends Entity implements IProjectile{
                     //worldObj.spawnEntityInWorld(new EntityLightningBolt(worldObj, posX, posY, posZ));
 
 
+                    if(!worldObj.isRemote){
 
-                    Block block = this.worldObj.getBlock(this.xTile, this.yTile, this.zTile);
+                    Explosion exp = new Explosion();
+                    exp.bakuretu(shootingEntity,worldObj,xTile,yTile,zTile,50,30F);
 
-                     float a = block.getExplosionResistance(this);
-
-                    System.out.println(block.getLocalizedName()+ this.xTile+ this.yTile+ this.zTile+ a);
-
-
-                    bakuretu2(xTile,yTile,zTile,50,8F);
+                    }
 
 
                     }
@@ -575,120 +572,6 @@ public class EntityBarret extends Entity implements IProjectile{
         }
     }
 
-
-
-
-
-
-
-    private void bakuretu(int xTile2, int yTile2, int zTile2,int r,float power) {
-
-    	Random rnd = new Random();
-
-    	for(int x = xTile2 - r; x <= xTile2 + r; x++){
-        	for(int y = yTile2 - r; y <= yTile2 + r; y++){
-            	for(int z = zTile2 - r; z <= zTile2 + r; z++){
-            		double dis = ((xTile2 - x) * (xTile2 - x) + ((zTile2 - z ) * (zTile2 - z)) + ((yTile2 - y) * (yTile2 -y) ));
-            		if(dis < r * r){
-
-            			double block_damage = 10;//Math.abs(1 - dis / (r * r)); // 距離の二乗を 0 - 1で表したもの
-
-            			System.out.println(block_damage);
-
-            			/*
-
-            			double px = 0.5 - (x - (xTile2 - r)) / (r * 2);
-            			double py = 0.5 - (y - (yTile2 - r)) / (r * 2);
-            			double pz = 0.5 - (z - (zTile2 - r)) / (r * 2);
-
-            			double absx = ((-1) * Math.abs(px) + 0.5)* 2;
-            			double absy = ((-1) * Math.abs(py) + 0.5)* 2;
-            			double absz = ((-1) * Math.abs(pz) + 0.5)* 2;
-
-            			double xyz = 1 / (absx * absy * absz);
-            			*/
-
-            			if(worldObj.getBlock(x, y, z).getExplosionResistance(shootingEntity) < block_damage * power){
-                			worldObj.setBlock(x, y, z, Blocks.air);
-                        }
-            			int ran = rnd.nextInt(3);
-            			if(ran < 1){
-            				//worldObj.setBlock(x, y, z, Blocks.air);
-            			}
-
-            		}
-            	}
-        	}
-    	}
-
-
-	}
-
-
-
-    private void bakuretu2(int xT, int yT, int zT,int r,float power) {
-
-    	Random rnd = new Random();
-    	int rndint = rnd.nextInt(r / 2);
-    	r /= 2;
-    	r += rndint;
-
-
-    	for(int x = 0; x <= r; x++){
-        	for(int y = 0; y * 2<= r; y++){
-            	for(int z = 0; z <= r; z++){
-            		double dis = (x * x) + ((y * y)*4) + (z * z);
-            		if(dis < r * r){
-
-            			double block_damage = Math.abs(1 - dis / (r * r)); // 距離の二乗を 0 - 1で表したもの
-            			 double b = Math.sqrt(block_damage);
-            			b = Math.abs(b - 0.5);
-            			b *= b;
-            			block_damage += (2 *b);
-
-
-            			if(worldObj.getBlock((xT + x), (yT + y), (zT + z)).getExplosionResistance(shootingEntity) < block_damage * power){
-                			worldObj.setBlock((xT + x), (yT + y), (zT + z), Blocks.air);
-                        }
-            			if(worldObj.getBlock((xT + x), (yT + y), (zT - z)).getExplosionResistance(shootingEntity) < block_damage * power){
-
-                			worldObj.setBlock((xT + x), (yT + y), (zT - z), Blocks.air);
-                        }
-            			if(worldObj.getBlock((xT + x), (yT - y), (zT + z)).getExplosionResistance(shootingEntity) < block_damage * power){
-
-                			worldObj.setBlock((xT + x), (yT - y), (zT + z), Blocks.air);
-                        }
-            			if(worldObj.getBlock((xT + x), (yT - y), (zT - z)).getExplosionResistance(shootingEntity) < block_damage * power){
-
-                			worldObj.setBlock((xT + x), (yT - y), (zT - z), Blocks.air);
-                        }
-            			if(worldObj.getBlock((xT - x), (yT + y), (zT + z)).getExplosionResistance(shootingEntity) < block_damage * power){
-
-                			worldObj.setBlock((xT - x), (yT + y), (zT + z), Blocks.air);
-                        }
-            			if(worldObj.getBlock((xT - x), (yT + y), (zT - z)).getExplosionResistance(shootingEntity) < block_damage * power){
-
-                			worldObj.setBlock((xT - x), (yT + y), (zT - z), Blocks.air);
-                        }
-            			if(worldObj.getBlock((xT - x), (yT - y), (zT + z)).getExplosionResistance(shootingEntity) < block_damage * power){
-
-                			worldObj.setBlock((xT - x), (yT - y), (zT + z), Blocks.air);
-                        }
-            			if(worldObj.getBlock((xT - x), (yT - y), (zT - z)).getExplosionResistance(shootingEntity) < block_damage * power){
-
-                			worldObj.setBlock((xT - x), (yT - y), (zT - z), Blocks.air);
-                        }
-
-
-
-
-            		}
-            	}
-        	}
-    	}
-
-
-	}
 
 	private static double lengthSq(double x, double y, double z) {
         return (x * x) + (y * y) + (z * z);
