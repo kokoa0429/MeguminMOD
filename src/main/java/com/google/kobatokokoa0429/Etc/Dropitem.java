@@ -18,7 +18,6 @@ public class Dropitem {
 
 	Random rnd = new Random();
 
-
 	public Dropitem(int x, int y, int z, World worldObj) {
 		// TODO 自動生成されたコンストラクター・スタブ
 		px = x;
@@ -32,11 +31,11 @@ public class Dropitem {
 	public void dropitem() {
 		// TODO 自動生成されたメソッド・スタブ
 
-		if(block != Blocks.air && rnd.nextInt(40) < 1){
+		if (block != Blocks.air && rnd.nextInt(40) < 1) {
 
-			EntityItem item = new EntityItem(world, (double)px, (double)py, (double)pz, new ItemStack(block.getItemDropped(0, rnd, 1), 1));
+			EntityItem item = new EntityItem(world, (double) px, (double) py, (double) pz,
+					new ItemStack(block.getItemDropped(0, rnd, 1), 1));
 			world.spawnEntityInWorld(item);
-
 
 		}
 	}
