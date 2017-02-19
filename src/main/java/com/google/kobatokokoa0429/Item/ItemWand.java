@@ -57,6 +57,7 @@ public class ItemWand extends ItemSword {
 		if (!world.isRemote) {
 			// world.spawnEntityInWorld(new Entitybakuretu(world,
 			// entityPlayer));
+			//GL11.glRotatef(5.0F, 0.0F, 1.0F, 0.0F);
 
 		}
 		return itemstack;

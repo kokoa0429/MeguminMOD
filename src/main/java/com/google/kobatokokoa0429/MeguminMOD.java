@@ -5,13 +5,11 @@ import com.google.kobatokokoa0429.Block.BlockWand;
 import com.google.kobatokokoa0429.Entity.EntityBarret;
 import com.google.kobatokokoa0429.GUI.GuiHandler;
 import com.google.kobatokokoa0429.Handler.ManataitoOreGenerator;
-import com.google.kobatokokoa0429.Handler.MeguminEntityPropertiesEventHandler;
 import com.google.kobatokokoa0429.Item.ItemManatite;
 import com.google.kobatokokoa0429.Item.ItemWand;
 import com.google.kobatokokoa0429.Item.ItemWandCore;
 import com.google.kobatokokoa0429.Item.ItemWandStick;
 
-import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.SidedProxy;
@@ -25,7 +23,6 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.util.EnumHelper;
 
 @Mod(modid = MeguminMOD.MOD_ID, version = MeguminMOD.version, useMetadata = true)
@@ -47,6 +44,8 @@ public class MeguminMOD {
 			return itemWand;
 		}
 	};
+	
+	
 
 	/** Stringを書くのではなくModIDを入れる。 */
 	@Mod.Instance(MOD_ID)
@@ -111,9 +110,9 @@ public class MeguminMOD {
 		// GUIの登録
 		NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
 		// イベントハンドラの登録
-		MeguminEntityPropertiesEventHandler MeguminEntityPropertiesEventHandler = new MeguminEntityPropertiesEventHandler();
-		MinecraftForge.EVENT_BUS.register(MeguminEntityPropertiesEventHandler);
-		FMLCommonHandler.instance().bus().register(MeguminEntityPropertiesEventHandler);
+		//MeguminEntityPropertiesEventHandler MeguminEntityPropertiesEventHandler = new MeguminEntityPropertiesEventHandler();
+		//MinecraftForge.EVENT_BUS.register(MeguminEntityPropertiesEventHandler);
+		//FMLCommonHandler.instance().bus().register(MeguminEntityPropertiesEventHandler);
 	}
 
 }

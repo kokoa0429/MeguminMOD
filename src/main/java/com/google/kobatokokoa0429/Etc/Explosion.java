@@ -37,7 +37,7 @@ public class Explosion {
 						if (worldObj.getBlock((xT + x), (yT + y), (zT + z))
 								.getExplosionResistance(shootingEntity) < block_damage * power) {
 
-							Dropitem drop = new Dropitem((xT + x), (yT + y), (zT + z), worldObj);
+							Dropitem drop = new Dropitem((xT + x), (yT + y), (zT + z), worldObj,xT,yT,zT);
 
 							worldObj.setBlock((xT + x), (yT + y), (zT + z), Blocks.air);
 
@@ -47,7 +47,7 @@ public class Explosion {
 						if (worldObj.getBlock((xT + x), (yT + y), (zT - z))
 								.getExplosionResistance(shootingEntity) < block_damage * power) {
 
-							Dropitem drop = new Dropitem((xT + x), (yT + y), (zT - z), worldObj);
+							Dropitem drop = new Dropitem((xT + x), (yT + y), (zT - z), worldObj,xT,yT,zT);
 							worldObj.setBlock((xT + x), (yT + y), (zT - z), Blocks.air);
 							drop.dropitem();
 
@@ -55,7 +55,7 @@ public class Explosion {
 						if (worldObj.getBlock((xT + x), (yT - y), (zT + z))
 								.getExplosionResistance(shootingEntity) < block_damage * power) {
 
-							Dropitem drop = new Dropitem((xT + x), (yT - y), (zT + z), worldObj);
+							Dropitem drop = new Dropitem((xT + x), (yT - y), (zT + z), worldObj,xT,yT,zT);
 							worldObj.setBlock((xT + x), (yT - y), (zT + z), Blocks.air);
 							drop.dropitem();
 
@@ -63,7 +63,7 @@ public class Explosion {
 						if (worldObj.getBlock((xT + x), (yT - y), (zT - z))
 								.getExplosionResistance(shootingEntity) < block_damage * power) {
 
-							Dropitem drop = new Dropitem((xT + x), (yT - y), (zT - z), worldObj);
+							Dropitem drop = new Dropitem((xT + x), (yT - y), (zT - z), worldObj,xT,yT,zT);
 							worldObj.setBlock((xT + x), (yT - y), (zT - z), Blocks.air);
 							drop.dropitem();
 
@@ -71,7 +71,7 @@ public class Explosion {
 						if (worldObj.getBlock((xT - x), (yT + y), (zT + z))
 								.getExplosionResistance(shootingEntity) < block_damage * power) {
 
-							Dropitem drop = new Dropitem((xT - x), (yT + y), (zT + z), worldObj);
+							Dropitem drop = new Dropitem((xT - x), (yT + y), (zT + z), worldObj,xT,yT,zT);
 							worldObj.setBlock((xT - x), (yT + y), (zT + z), Blocks.air);
 							drop.dropitem();
 
@@ -79,7 +79,7 @@ public class Explosion {
 						if (worldObj.getBlock((xT - x), (yT + y), (zT - z))
 								.getExplosionResistance(shootingEntity) < block_damage * power) {
 
-							Dropitem drop = new Dropitem((xT - x), (yT + y), (zT - z), worldObj);
+							Dropitem drop = new Dropitem((xT - x), (yT + y), (zT - z), worldObj,xT,yT,zT);
 							worldObj.setBlock((xT - x), (yT + y), (zT - z), Blocks.air);
 							drop.dropitem();
 
@@ -87,7 +87,7 @@ public class Explosion {
 						if (worldObj.getBlock((xT - x), (yT - y), (zT + z))
 								.getExplosionResistance(shootingEntity) < block_damage * power) {
 
-							Dropitem drop = new Dropitem((xT - x), (yT - y), (zT + z), worldObj);
+							Dropitem drop = new Dropitem((xT - x), (yT - y), (zT + z), worldObj,xT,yT,zT);
 							worldObj.setBlock((xT - x), (yT - y), (zT + z), Blocks.air);
 							drop.dropitem();
 
@@ -95,7 +95,100 @@ public class Explosion {
 						if (worldObj.getBlock((xT - x), (yT - y), (zT - z))
 								.getExplosionResistance(shootingEntity) < block_damage * power) {
 
-							Dropitem drop = new Dropitem((xT - x), (yT - y), (zT - z), worldObj);
+							Dropitem drop = new Dropitem((xT - x), (yT - y), (zT - z), worldObj,xT,yT,zT);
+							worldObj.setBlock((xT - x), (yT - y), (zT - z), Blocks.air);
+							drop.dropitem();
+						}
+
+					}
+				}
+			}
+		}
+
+	}
+	public void bakuretu2(Entity shootingEntity, World worldObj, int xT, int yT, int zT, int r, float power) {
+
+		Random rnd = new Random();
+		int rndint = rnd.nextInt(r / 2);
+		r /= 2;
+		r += rndint;
+
+		for (int x = 0; x <= r; x++) {
+			for (int y = 0; y <= r; y++) {
+				for (int z = 0; z <= r; z++) {
+					double dis = (x * x) + ((y * y)) + (z * z);
+					if (dis < r * r) {
+
+						double block_damage = Math.abs(1 - dis / (r * r)); // 距離の二乗を
+																			// 0
+																			// -
+																			// 1で表したもの
+						double b = Math.sqrt(block_damage);
+						b = Math.abs(b - 0.5);
+						b *= b;
+						block_damage += (2 * b);
+
+						if (worldObj.getBlock((xT + x), (yT + y), (zT + z))
+								.getExplosionResistance(shootingEntity) < block_damage * power) {
+
+							Dropitem drop = new Dropitem((xT + x), (yT + y), (zT + z), worldObj,xT,yT,zT);
+
+							worldObj.setBlock((xT + x), (yT + y), (zT + z), Blocks.air);
+
+							drop.dropitem();
+
+						}
+						if (worldObj.getBlock((xT + x), (yT + y), (zT - z))
+								.getExplosionResistance(shootingEntity) < block_damage * power) {
+
+							Dropitem drop = new Dropitem((xT + x), (yT + y), (zT - z), worldObj,xT,yT,zT);
+							worldObj.setBlock((xT + x), (yT + y), (zT - z), Blocks.air);
+							drop.dropitem();
+
+						}
+						if (worldObj.getBlock((xT + x), (yT - y), (zT + z))
+								.getExplosionResistance(shootingEntity) < block_damage * power) {
+
+							Dropitem drop = new Dropitem((xT + x), (yT - y), (zT + z), worldObj,xT,yT,zT);
+							worldObj.setBlock((xT + x), (yT - y), (zT + z), Blocks.air);
+							drop.dropitem();
+
+						}
+						if (worldObj.getBlock((xT + x), (yT - y), (zT - z))
+								.getExplosionResistance(shootingEntity) < block_damage * power) {
+
+							Dropitem drop = new Dropitem((xT + x), (yT - y), (zT - z), worldObj,xT,yT,zT);
+							worldObj.setBlock((xT + x), (yT - y), (zT - z), Blocks.air);
+							drop.dropitem();
+
+						}
+						if (worldObj.getBlock((xT - x), (yT + y), (zT + z))
+								.getExplosionResistance(shootingEntity) < block_damage * power) {
+
+							Dropitem drop = new Dropitem((xT - x), (yT + y), (zT + z), worldObj,xT,yT,zT);
+							worldObj.setBlock((xT - x), (yT + y), (zT + z), Blocks.air);
+							drop.dropitem();
+
+						}
+						if (worldObj.getBlock((xT - x), (yT + y), (zT - z))
+								.getExplosionResistance(shootingEntity) < block_damage * power) {
+
+							Dropitem drop = new Dropitem((xT - x), (yT + y), (zT - z), worldObj,xT,yT,zT);
+							worldObj.setBlock((xT - x), (yT + y), (zT - z), Blocks.air);
+							drop.dropitem();
+
+						}
+						if (worldObj.getBlock((xT - x), (yT - y), (zT + z))
+								.getExplosionResistance(shootingEntity) < block_damage * power) {
+							Dropitem drop = new Dropitem((xT - x), (yT - y), (zT + z), worldObj,xT,yT,zT);
+							worldObj.setBlock((xT - x), (yT - y), (zT + z), Blocks.air);
+							drop.dropitem();
+
+						}
+						if (worldObj.getBlock((xT - x), (yT - y), (zT - z))
+								.getExplosionResistance(shootingEntity) < block_damage * power) {
+
+							Dropitem drop = new Dropitem((xT - x), (yT - y), (zT - z), worldObj,xT,yT,zT);
 							worldObj.setBlock((xT - x), (yT - y), (zT - z), Blocks.air);
 							drop.dropitem();
 						}

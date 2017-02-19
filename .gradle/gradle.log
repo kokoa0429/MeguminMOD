@@ -5,49 +5,329 @@
  R4wk, ZeuX, IngisKahn, bspkrs
  MCP Data version : unknown
 ****************************
-:eclipseClasspath
-Download https://libraries.minecraft.net/net/minecraft/launchwrapper/1.12/launchwrapper-1.12-sources.jar
-Download http://repo1.maven.org/maven2/org/ow2/asm/asm-debug-all/5.0.3/asm-debug-all-5.0.3-sources.jar
-Download http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.3.3/akka-actor_2.11-2.3.3-sources.jar
-Download http://repo1.maven.org/maven2/com/typesafe/config/1.2.1/config-1.2.1-sources.jar
-Download http://repo1.maven.org/maven2/org/scala-lang/scala-actors-migration_2.11/1.1.0/scala-actors-migration_2.11-1.1.0-sources.jar
-Download http://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.1/scala-compiler-2.11.1-sources.jar
-Download http://repo1.maven.org/maven2/org/scala-lang/plugins/scala-continuations-library_2.11/1.0.2/scala-continuations-library_2.11-1.0.2-sources.jar
-Download http://repo1.maven.org/maven2/org/scala-lang/plugins/scala-continuations-plugin_2.11.1/1.0.2/scala-continuations-plugin_2.11.1-1.0.2-sources.jar
-Download http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.1/scala-library-2.11.1-sources.jar
-Download http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.1/scala-reflect-2.11.1-sources.jar
-Download http://repo1.maven.org/maven2/net/sf/jopt-simple/jopt-simple/4.5/jopt-simple-4.5-sources.jar
-Download http://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1-sources.jar
-Download http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.3.3/httpclient-4.3.3-sources.jar
-Download http://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3-sources.jar
-Download http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2-sources.jar
-Download http://repo1.maven.org/maven2/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3-sources.jar
-Download https://libraries.minecraft.net/com/ibm/icu/icu4j-core-mojang/51.2/icu4j-core-mojang-51.2-sources.jar
-Download https://libraries.minecraft.net/com/paulscode/codecjorbis/20101023/codecjorbis-20101023-sources.jar
-Download https://libraries.minecraft.net/com/paulscode/codecwav/20101023/codecwav-20101023-sources.jar
-Download https://libraries.minecraft.net/com/paulscode/libraryjavasound/20101123/libraryjavasound-20101123-sources.jar
-Download https://libraries.minecraft.net/com/paulscode/librarylwjglopenal/20100824/librarylwjglopenal-20100824-sources.jar
-Download https://libraries.minecraft.net/com/paulscode/soundsystem/20120107/soundsystem-20120107-sources.jar
-Download http://repo1.maven.org/maven2/io/netty/netty-all/4.0.10.Final/netty-all-4.0.10.Final-sources.jar
-Download http://repo1.maven.org/maven2/com/google/guava/guava/17.0/guava-17.0-sources.jar
-Download http://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2-sources.jar
-Download http://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4-sources.jar
-Download http://repo1.maven.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9-sources.jar
-Download http://repo1.maven.org/maven2/net/java/jinput/jinput/2.0.5/jinput-2.0.5-sources.jar
-Download http://repo1.maven.org/maven2/net/java/jutils/jutils/1.0.0/jutils-1.0.0-sources.jar
-Download http://repo1.maven.org/maven2/com/google/code/gson/gson/2.2.4/gson-2.2.4-sources.jar
-Download https://libraries.minecraft.net/com/mojang/authlib/1.5.16/authlib-1.5.16-sources.jar
-Download http://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.0-beta9/log4j-api-2.0-beta9-sources.jar
-Download http://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.0-beta9/log4j-core-2.0-beta9-sources.jar
-Download http://repo1.maven.org/maven2/org/lwjgl/lwjgl/lwjgl/2.9.1/lwjgl-2.9.1-sources.jar
-Download http://repo1.maven.org/maven2/org/lwjgl/lwjgl/lwjgl_util/2.9.1/lwjgl_util-2.9.1-sources.jar
-Download http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.11.0/scala-actors-2.11.0-sources.jar
-Download http://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2-sources.jar
-Download http://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.1/scala-parser-combinators_2.11-1.0.1-sources.jar
-:eclipseJdt
-:eclipseProject
-:eclipse
+:compileApiJava UP-TO-DATE
+:processApiResources UP-TO-DATE
+:apiClasses UP-TO-DATE
+:sourceMainJava
+:compileJava警告: [options] ブートストラップ・クラスパスが-source 1.6と一緒に設定されていません
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\ClientProxy.java:30: エラー: この文字は、エンコーディングMS932にマップできません
+	 * client蛛ｴ縺ｮTileEntity逋ｻ骭ｲ繝｡繧ｽ繝?繝峨?? 縺薙％縺ｧ縺ｯ菴ｿ逕ｨ縺励※縺?縺ｾ縺帙ｓ縺後?ゝileEntity縺ｫ迢ｬ閾ｪ繝ｬ繝ｳ繝?繝ｼ繧呈戟縺溘○縺溘＞蝣ｴ蜷医??
+	                                ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\ClientProxy.java:30: エラー: この文字は、エンコーディングMS932にマップできません
+	 * client蛛ｴ縺ｮTileEntity逋ｻ骭ｲ繝｡繧ｽ繝?繝峨?? 縺薙％縺ｧ縺ｯ菴ｿ逕ｨ縺励※縺?縺ｾ縺帙ｓ縺後?ゝileEntity縺ｫ迢ｬ閾ｪ繝ｬ繝ｳ繝?繝ｼ繧呈戟縺溘○縺溘＞蝣ｴ蜷医??
+	                                   ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\ClientProxy.java:30: エラー: この文字は、エンコーディングMS932にマップできません
+	 * client蛛ｴ縺ｮTileEntity逋ｻ骭ｲ繝｡繧ｽ繝?繝峨?? 縺薙％縺ｧ縺ｯ菴ｿ逕ｨ縺励※縺?縺ｾ縺帙ｓ縺後?ゝileEntity縺ｫ迢ｬ閾ｪ繝ｬ繝ｳ繝?繝ｼ繧呈戟縺溘○縺溘＞蝣ｴ蜷医??
+	                                    ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\ClientProxy.java:30: エラー: この文字は、エンコーディングMS932にマップできません
+	 * client蛛ｴ縺ｮTileEntity逋ｻ骭ｲ繝｡繧ｽ繝?繝峨?? 縺薙％縺ｧ縺ｯ菴ｿ逕ｨ縺励※縺?縺ｾ縺帙ｓ縺後?ゝileEntity縺ｫ迢ｬ閾ｪ繝ｬ繝ｳ繝?繝ｼ繧呈戟縺溘○縺溘＞蝣ｴ蜷医??
+	                                                     ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\ClientProxy.java:30: エラー: この文字は、エンコーディングMS932にマップできません
+	 * client蛛ｴ縺ｮTileEntity逋ｻ骭ｲ繝｡繧ｽ繝?繝峨?? 縺薙％縺ｧ縺ｯ菴ｿ逕ｨ縺励※縺?縺ｾ縺帙ｓ縺後?ゝileEntity縺ｫ迢ｬ閾ｪ繝ｬ繝ｳ繝?繝ｼ繧呈戟縺溘○縺溘＞蝣ｴ蜷医??
+	                                                             ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\ClientProxy.java:30: エラー: この文字は、エンコーディングMS932にマップできません
+	 * client蛛ｴ縺ｮTileEntity逋ｻ骭ｲ繝｡繧ｽ繝?繝峨?? 縺薙％縺ｧ縺ｯ菴ｿ逕ｨ縺励※縺?縺ｾ縺帙ｓ縺後?ゝileEntity縺ｫ迢ｬ閾ｪ繝ｬ繝ｳ繝?繝ｼ繧呈戟縺溘○縺溘＞蝣ｴ蜷医??
+	                                                                                   ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\ClientProxy.java:30: エラー: この文字は、エンコーディングMS932にマップできません
+	 * client蛛ｴ縺ｮTileEntity逋ｻ骭ｲ繝｡繧ｽ繝?繝峨?? 縺薙％縺ｧ縺ｯ菴ｿ逕ｨ縺励※縺?縺ｾ縺帙ｓ縺後?ゝileEntity縺ｫ迢ｬ閾ｪ繝ｬ繝ｳ繝?繝ｼ繧呈戟縺溘○縺溘＞蝣ｴ蜷医??
+	                                                                                                   ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\ClientProxy.java:30: エラー: この文字は、エンコーディングMS932にマップできません
+	 * client蛛ｴ縺ｮTileEntity逋ｻ骭ｲ繝｡繧ｽ繝?繝峨?? 縺薙％縺ｧ縺ｯ菴ｿ逕ｨ縺励※縺?縺ｾ縺帙ｓ縺後?ゝileEntity縺ｫ迢ｬ閾ｪ繝ｬ繝ｳ繝?繝ｼ繧呈戟縺溘○縺溘＞蝣ｴ蜷医??
+	                                                                                                    ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\ClientProxy.java:31: エラー: この文字は、エンコーディングMS932にマップできません
+	 * ClientRegistry.registerTileEntity(TileEntity縺ｮ繧ｯ繝ｩ繧ｹ蜷?.class, "TileEntity縺ｮ蜷榊燕",
+	                                                        ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\ClientProxy.java:32: エラー: この文字は、エンコーディングMS932にマップできません
+	 * new TileEntity縺ｮ繝ｬ繝ｳ繝?窶輔け繝ｩ繧ｹ()); 縺ｮ繧医≧縺ｫ險倩ｿｰ縺励※縲√Ξ繝ｳ繝?繝ｼ繧ｯ繝ｩ繧ｹ縺ｨTileEntity繧堤匳骭ｲ縺励∪縺吶??
+	                        ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\ClientProxy.java:32: エラー: この文字は、エンコーディングMS932にマップできません
+	 * new TileEntity縺ｮ繝ｬ繝ｳ繝?窶輔け繝ｩ繧ｹ()); 縺ｮ繧医≧縺ｫ險倩ｿｰ縺励※縲√Ξ繝ｳ繝?繝ｼ繧ｯ繝ｩ繧ｹ縺ｨTileEntity繧堤匳骭ｲ縺励∪縺吶??
+	                                                         ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\ClientProxy.java:32: エラー: この文字は、エンコーディングMS932にマップできません
+	 * new TileEntity縺ｮ繝ｬ繝ｳ繝?窶輔け繝ｩ繧ｹ()); 縺ｮ繧医≧縺ｫ險倩ｿｰ縺励※縲√Ξ繝ｳ繝?繝ｼ繧ｯ繝ｩ繧ｹ縺ｨTileEntity繧堤匳骭ｲ縺励∪縺吶??
+	                                                                                        ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\ClientProxy.java:32: エラー: この文字は、エンコーディングMS932にマップできません
+	 * new TileEntity縺ｮ繝ｬ繝ｳ繝?窶輔け繝ｩ繧ｹ()); 縺ｮ繧医≧縺ｫ險倩ｿｰ縺励※縲√Ξ繝ｳ繝?繝ｼ繧ｯ繝ｩ繧ｹ縺ｨTileEntity繧堤匳骭ｲ縺励∪縺吶??
+	                                                                                         ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\ClientProxy.java:34: エラー: この文字は、エンコーディングMS932にマップできません
+	 * 繝ｬ繝ｳ繝?繝ｼ髢｢菫ゅ?ｮ繧ｯ繝ｩ繧ｹ縺ｯ繧ｯ繝ｩ繧､繧｢繝ｳ繝亥?ｴ縺ｫ縺励°蟄伜惠縺励↑縺?縺溘ａ縲√し繝ｼ繝仙?ｴ縺ｧ隱､縺｣縺ｦ逋ｻ骭ｲ縺励↑縺?繧医≧縲?ｼ医％縺ｮ繧医≧縺ｫ?ｼ峨?励Ο繧ｭ繧ｷ繧帝?壹☆縺ｪ縺ｩ縺ｮ蟇ｾ遲悶ｒ蠢?縺夊｡後＞縺ｾ縺吶??
+	        ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\ClientProxy.java:34: エラー: この文字は、エンコーディングMS932にマップできません
+	 * 繝ｬ繝ｳ繝?繝ｼ髢｢菫ゅ?ｮ繧ｯ繝ｩ繧ｹ縺ｯ繧ｯ繝ｩ繧､繧｢繝ｳ繝亥?ｴ縺ｫ縺励°蟄伜惠縺励↑縺?縺溘ａ縲√し繝ｼ繝仙?ｴ縺ｧ隱､縺｣縺ｦ逋ｻ骭ｲ縺励↑縺?繧医≧縲?ｼ医％縺ｮ繧医≧縺ｫ?ｼ峨?励Ο繧ｭ繧ｷ繧帝?壹☆縺ｪ縺ｩ縺ｮ蟇ｾ遲悶ｒ蠢?縺夊｡後＞縺ｾ縺吶??
+	               ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\ClientProxy.java:34: エラー: この文字は、エンコーディングMS932にマップできません
+	 * 繝ｬ繝ｳ繝?繝ｼ髢｢菫ゅ?ｮ繧ｯ繝ｩ繧ｹ縺ｯ繧ｯ繝ｩ繧､繧｢繝ｳ繝亥?ｴ縺ｫ縺励°蟄伜惠縺励↑縺?縺溘ａ縲√し繝ｼ繝仙?ｴ縺ｧ隱､縺｣縺ｦ逋ｻ骭ｲ縺励↑縺?繧医≧縲?ｼ医％縺ｮ繧医≧縺ｫ?ｼ峨?励Ο繧ｭ繧ｷ繧帝?壹☆縺ｪ縺ｩ縺ｮ蟇ｾ遲悶ｒ蠢?縺夊｡後＞縺ｾ縺吶??
+	                                     ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\ClientProxy.java:34: エラー: この文字は、エンコーディングMS932にマップできません
+	 * 繝ｬ繝ｳ繝?繝ｼ髢｢菫ゅ?ｮ繧ｯ繝ｩ繧ｹ縺ｯ繧ｯ繝ｩ繧､繧｢繝ｳ繝亥?ｴ縺ｫ縺励°蟄伜惠縺励↑縺?縺溘ａ縲√し繝ｼ繝仙?ｴ縺ｧ隱､縺｣縺ｦ逋ｻ骭ｲ縺励↑縺?繧医≧縲?ｼ医％縺ｮ繧医≧縺ｫ?ｼ峨?励Ο繧ｭ繧ｷ繧帝?壹☆縺ｪ縺ｩ縺ｮ蟇ｾ遲悶ｒ蠢?縺夊｡後＞縺ｾ縺吶??
+	                                                   ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\ClientProxy.java:34: エラー: この文字は、エンコーディングMS932にマップできません
+	 * 繝ｬ繝ｳ繝?繝ｼ髢｢菫ゅ?ｮ繧ｯ繝ｩ繧ｹ縺ｯ繧ｯ繝ｩ繧､繧｢繝ｳ繝亥?ｴ縺ｫ縺励°蟄伜惠縺励↑縺?縺溘ａ縲√し繝ｼ繝仙?ｴ縺ｧ隱､縺｣縺ｦ逋ｻ骭ｲ縺励↑縺?繧医≧縲?ｼ医％縺ｮ繧医≧縺ｫ?ｼ峨?励Ο繧ｭ繧ｷ繧帝?壹☆縺ｪ縺ｩ縺ｮ蟇ｾ遲悶ｒ蠢?縺夊｡後＞縺ｾ縺吶??
+	                                                              ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\ClientProxy.java:34: エラー: この文字は、エンコーディングMS932にマップできません
+	 * 繝ｬ繝ｳ繝?繝ｼ髢｢菫ゅ?ｮ繧ｯ繝ｩ繧ｹ縺ｯ繧ｯ繝ｩ繧､繧｢繝ｳ繝亥?ｴ縺ｫ縺励°蟄伜惠縺励↑縺?縺溘ａ縲√し繝ｼ繝仙?ｴ縺ｧ隱､縺｣縺ｦ逋ｻ骭ｲ縺励↑縺?繧医≧縲?ｼ医％縺ｮ繧医≧縺ｫ?ｼ峨?励Ο繧ｭ繧ｷ繧帝?壹☆縺ｪ縺ｩ縺ｮ蟇ｾ遲悶ｒ蠢?縺夊｡後＞縺ｾ縺吶??
+	                                                                                ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\ClientProxy.java:34: エラー: この文字は、エンコーディングMS932にマップできません
+	 * 繝ｬ繝ｳ繝?繝ｼ髢｢菫ゅ?ｮ繧ｯ繝ｩ繧ｹ縺ｯ繧ｯ繝ｩ繧､繧｢繝ｳ繝亥?ｴ縺ｫ縺励°蟄伜惠縺励↑縺?縺溘ａ縲√し繝ｼ繝仙?ｴ縺ｧ隱､縺｣縺ｦ逋ｻ骭ｲ縺励↑縺?繧医≧縲?ｼ医％縺ｮ繧医≧縺ｫ?ｼ峨?励Ο繧ｭ繧ｷ繧帝?壹☆縺ｪ縺ｩ縺ｮ蟇ｾ遲悶ｒ蠢?縺夊｡後＞縺ｾ縺吶??
+	                                                                                     ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\ClientProxy.java:34: エラー: この文字は、エンコーディングMS932にマップできません
+	 * 繝ｬ繝ｳ繝?繝ｼ髢｢菫ゅ?ｮ繧ｯ繝ｩ繧ｹ縺ｯ繧ｯ繝ｩ繧､繧｢繝ｳ繝亥?ｴ縺ｫ縺励°蟄伜惠縺励↑縺?縺溘ａ縲√し繝ｼ繝仙?ｴ縺ｧ隱､縺｣縺ｦ逋ｻ骭ｲ縺励↑縺?繧医≧縲?ｼ医％縺ｮ繧医≧縺ｫ?ｼ峨?励Ο繧ｭ繧ｷ繧帝?壹☆縺ｪ縺ｩ縺ｮ蟇ｾ遲悶ｒ蠢?縺夊｡後＞縺ｾ縺吶??
+	                                                                                                ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\ClientProxy.java:34: エラー: この文字は、エンコーディングMS932にマップできません
+	 * 繝ｬ繝ｳ繝?繝ｼ髢｢菫ゅ?ｮ繧ｯ繝ｩ繧ｹ縺ｯ繧ｯ繝ｩ繧､繧｢繝ｳ繝亥?ｴ縺ｫ縺励°蟄伜惠縺励↑縺?縺溘ａ縲√し繝ｼ繝仙?ｴ縺ｧ隱､縺｣縺ｦ逋ｻ骭ｲ縺励↑縺?繧医≧縲?ｼ医％縺ｮ繧医≧縺ｫ?ｼ峨?励Ο繧ｭ繧ｷ繧帝?壹☆縺ｪ縺ｩ縺ｮ蟇ｾ遲悶ｒ蠢?縺夊｡後＞縺ｾ縺吶??
+	                                                                                                   ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\ClientProxy.java:34: エラー: この文字は、エンコーディングMS932にマップできません
+	 * 繝ｬ繝ｳ繝?繝ｼ髢｢菫ゅ?ｮ繧ｯ繝ｩ繧ｹ縺ｯ繧ｯ繝ｩ繧､繧｢繝ｳ繝亥?ｴ縺ｫ縺励°蟄伜惠縺励↑縺?縺溘ａ縲√し繝ｼ繝仙?ｴ縺ｧ隱､縺｣縺ｦ逋ｻ骭ｲ縺励↑縺?繧医≧縲?ｼ医％縺ｮ繧医≧縺ｫ?ｼ峨?励Ο繧ｭ繧ｷ繧帝?壹☆縺ｪ縺ｩ縺ｮ蟇ｾ遲悶ｒ蠢?縺夊｡後＞縺ｾ縺吶??
+	                                                                                                            ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\ClientProxy.java:34: エラー: この文字は、エンコーディングMS932にマップできません
+	 * 繝ｬ繝ｳ繝?繝ｼ髢｢菫ゅ?ｮ繧ｯ繝ｩ繧ｹ縺ｯ繧ｯ繝ｩ繧､繧｢繝ｳ繝亥?ｴ縺ｫ縺励°蟄伜惠縺励↑縺?縺溘ａ縲√し繝ｼ繝仙?ｴ縺ｧ隱､縺｣縺ｦ逋ｻ骭ｲ縺励↑縺?繧医≧縲?ｼ医％縺ｮ繧医≧縺ｫ?ｼ峨?励Ο繧ｭ繧ｷ繧帝?壹☆縺ｪ縺ｩ縺ｮ蟇ｾ遲悶ｒ蠢?縺夊｡後＞縺ｾ縺吶??
+	                                                                                                                           ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\ClientProxy.java:34: エラー: この文字は、エンコーディングMS932にマップできません
+	 * 繝ｬ繝ｳ繝?繝ｼ髢｢菫ゅ?ｮ繧ｯ繝ｩ繧ｹ縺ｯ繧ｯ繝ｩ繧､繧｢繝ｳ繝亥?ｴ縺ｫ縺励°蟄伜惠縺励↑縺?縺溘ａ縲√し繝ｼ繝仙?ｴ縺ｧ隱､縺｣縺ｦ逋ｻ骭ｲ縺励↑縺?繧医≧縲?ｼ医％縺ｮ繧医≧縺ｫ?ｼ峨?励Ο繧ｭ繧ｷ繧帝?壹☆縺ｪ縺ｩ縺ｮ蟇ｾ遲悶ｒ蠢?縺夊｡後＞縺ｾ縺吶??
+	                                                                                                                                     ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\ClientProxy.java:34: エラー: この文字は、エンコーディングMS932にマップできません
+	 * 繝ｬ繝ｳ繝?繝ｼ髢｢菫ゅ?ｮ繧ｯ繝ｩ繧ｹ縺ｯ繧ｯ繝ｩ繧､繧｢繝ｳ繝亥?ｴ縺ｫ縺励°蟄伜惠縺励↑縺?縺溘ａ縲√し繝ｼ繝仙?ｴ縺ｧ隱､縺｣縺ｦ逋ｻ骭ｲ縺励↑縺?繧医≧縲?ｼ医％縺ｮ繧医≧縺ｫ?ｼ峨?励Ο繧ｭ繧ｷ繧帝?壹☆縺ｪ縺ｩ縺ｮ蟇ｾ遲悶ｒ蠢?縺夊｡後＞縺ｾ縺吶??
+	                                                                                                                                      ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\MeguminMOD.java:35: エラー: この文字は、エンコーディングMS932にマップできません
+	 * 螟画峩繝ｻmodID繧貞､ｧ譁?蟄励↓螟画峩縲? 螟画峩繝ｻ繝舌?ｼ繧ｸ繝ｧ繝ｳ繧貞､画焚縺ｫ縲? 霑ｽ蜉?繝ｻResourceLocation逕ｨ縺ｮ繝峨Γ繧､繝ｳ
+	                  ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\MeguminMOD.java:35: エラー: この文字は、エンコーディングMS932にマップできません
+	 * 螟画峩繝ｻmodID繧貞､ｧ譁?蟄励↓螟画峩縲? 螟画峩繝ｻ繝舌?ｼ繧ｸ繝ｧ繝ｳ繧貞､画焚縺ｫ縲? 霑ｽ蜉?繝ｻResourceLocation逕ｨ縺ｮ繝峨Γ繧､繝ｳ
+	                          ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\MeguminMOD.java:35: エラー: この文字は、エンコーディングMS932にマップできません
+	 * 螟画峩繝ｻmodID繧貞､ｧ譁?蟄励↓螟画峩縲? 螟画峩繝ｻ繝舌?ｼ繧ｸ繝ｧ繝ｳ繧貞､画焚縺ｫ縲? 霑ｽ蜉?繝ｻResourceLocation逕ｨ縺ｮ繝峨Γ繧､繝ｳ
+	                                   ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\MeguminMOD.java:35: エラー: この文字は、エンコーディングMS932にマップできません
+	 * 螟画峩繝ｻmodID繧貞､ｧ譁?蟄励↓螟画峩縲? 螟画峩繝ｻ繝舌?ｼ繧ｸ繝ｧ繝ｳ繧貞､画焚縺ｫ縲? 霑ｽ蜉?繝ｻResourceLocation逕ｨ縺ｮ繝峨Γ繧､繝ｳ
+	                                                   ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\MeguminMOD.java:35: エラー: この文字は、エンコーディングMS932にマップできません
+	 * 螟画峩繝ｻmodID繧貞､ｧ譁?蟄励↓螟画峩縲? 螟画峩繝ｻ繝舌?ｼ繧ｸ繝ｧ繝ｳ繧貞､画焚縺ｫ縲? 霑ｽ蜉?繝ｻResourceLocation逕ｨ縺ｮ繝峨Γ繧､繝ｳ
+	                                                        ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\MeguminMOD.java:42: エラー: この文字は、エンコーディングMS932にマップできません
+	 * 蜑企勁繝ｻmeguminmodtab.java 螟画峩繝ｻ螟画焚蜷? 螟画峩繝ｻ迢ｬ閾ｪ繧ｯ繝ｩ繧ｹ縺ｮ繧､繝ｳ繧ｹ繧ｿ繝ｳ繧ｹ縺九ｉ蜈?繧ｯ繝ｩ繧ｹ縺ｮ繧､繝ｳ繧ｹ繧ｿ繝ｳ繧ｹ縺ｫ
+	                                    ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\MeguminMOD.java:42: エラー: この文字は、エンコーディングMS932にマップできません
+	 * 蜑企勁繝ｻmeguminmodtab.java 螟画峩繝ｻ螟画焚蜷? 螟画峩繝ｻ迢ｬ閾ｪ繧ｯ繝ｩ繧ｹ縺ｮ繧､繝ｳ繧ｹ繧ｿ繝ｳ繧ｹ縺九ｉ蜈?繧ｯ繝ｩ繧ｹ縺ｮ繧､繝ｳ繧ｹ繧ｿ繝ｳ繧ｹ縺ｫ
+	                                                                       ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\MeguminMOD.java:51: エラー: この文字は、エンコーディングMS932にマップできません
+	/** String繧呈嶌縺上?ｮ縺ｧ縺ｯ縺ｪ縺舟odID繧貞?･繧後ｋ縲? */
+	               ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\MeguminMOD.java:51: エラー: この文字は、エンコーディングMS932にマップできません
+	/** String繧呈嶌縺上?ｮ縺ｧ縺ｯ縺ｪ縺舟odID繧貞?･繧後ｋ縲? */
+	                               ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\MeguminMOD.java:51: エラー: この文字は、エンコーディングMS932にマップできません
+	/** String繧呈嶌縺上?ｮ縺ｧ縺ｯ縺ｪ縺舟odID繧貞?･繧後ｋ縲? */
+	                                     ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\MeguminMOD.java:58: エラー: この文字は、エンコーディングMS932にマップできません
+	 * 螟画峩繝ｻ螟画焚蜷阪ｒ繧上°繧翫ｄ縺吶￥ 螟画峩繝ｻsetCreativeTab繧貞推繧ｯ繝ｩ繧ｹ蜀?縺ｫ螟画峩
+	                                                     ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\MeguminMOD.java:74: エラー: この文字は、エンコーディングMS932にマップできません
+		// 繝槭ユ繝ｪ繧｢繝ｫ霑ｽ蜉??ｼ医ヤ繝ｼ繝ｫ?ｼ?
+		               ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\MeguminMOD.java:74: エラー: この文字は、エンコーディングMS932にマップできません
+		// 繝槭ユ繝ｪ繧｢繝ｫ霑ｽ蜉??ｼ医ヤ繝ｼ繝ｫ?ｼ?
+		                ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\MeguminMOD.java:74: エラー: この文字は、エンコーディングMS932にマップできません
+		// 繝槭ユ繝ｪ繧｢繝ｫ霑ｽ蜉??ｼ医ヤ繝ｼ繝ｫ?ｼ?
+		                        ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\MeguminMOD.java:74: エラー: この文字は、エンコーディングMS932にマップできません
+		// 繝槭ユ繝ｪ繧｢繝ｫ霑ｽ蜉??ｼ医ヤ繝ｼ繝ｫ?ｼ?
+		                          ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\MeguminMOD.java:92: エラー: この文字は、エンコーディングMS932にマップできません
+		// 繧ｨ繝ｳ繝?繧｣繝?繧｣縺ｮ逋ｻ骭ｲ
+		        ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\MeguminMOD.java:92: エラー: この文字は、エンコーディングMS932にマップできません
+		// 繧ｨ繝ｳ繝?繧｣繝?繧｣縺ｮ逋ｻ骭ｲ
+		            ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\MeguminMOD.java:95: エラー: この文字は、エンコーディングMS932にマップできません
+		// 驩ｱ遏ｳ逕滓??
+		         ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\MeguminMOD.java:95: エラー: この文字は、エンコーディングMS932にマップできません
+		// 驩ｱ遏ｳ逕滓??
+		          ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Block\BlockManatite.java:15: エラー: この文字は、エンコーディングMS932にマップできません
+		 * 螟画峩繝ｻ繧ｯ繝ｪ繧ｨ繧､繝?繧｣繝悶ち繝悶?ｮ險ｭ螳壹ｒ縺薙％縺ｫ螟画峩縲? 螟画峩繝ｻsetBlockTextureName縺ｮ蠑墓焚縺ｮ繝峨Γ繧､繝ｳ驛ｨ蛻?繧樽odID縺ｫ
+		                 ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Block\BlockManatite.java:15: エラー: この文字は、エンコーディングMS932にマップできません
+		 * 螟画峩繝ｻ繧ｯ繝ｪ繧ｨ繧､繝?繧｣繝悶ち繝悶?ｮ險ｭ螳壹ｒ縺薙％縺ｫ螟画峩縲? 螟画峩繝ｻsetBlockTextureName縺ｮ蠑墓焚縺ｮ繝峨Γ繧､繝ｳ驛ｨ蛻?繧樽odID縺ｫ
+		                         ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Block\BlockManatite.java:15: エラー: この文字は、エンコーディングMS932にマップできません
+		 * 螟画峩繝ｻ繧ｯ繝ｪ繧ｨ繧､繝?繧｣繝悶ち繝悶?ｮ險ｭ螳壹ｒ縺薙％縺ｫ螟画峩縲? 螟画峩繝ｻsetBlockTextureName縺ｮ蠑墓焚縺ｮ繝峨Γ繧､繝ｳ驛ｨ蛻?繧樽odID縺ｫ
+		                                         ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Block\BlockManatite.java:15: エラー: この文字は、エンコーディングMS932にマップできません
+		 * 螟画峩繝ｻ繧ｯ繝ｪ繧ｨ繧､繝?繧｣繝悶ち繝悶?ｮ險ｭ螳壹ｒ縺薙％縺ｫ螟画峩縲? 螟画峩繝ｻsetBlockTextureName縺ｮ蠑墓焚縺ｮ繝峨Γ繧､繝ｳ驛ｨ蛻?繧樽odID縺ｫ
+		                                                                                    ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Block\BlockWand.java:20: エラー: この文字は、エンコーディングMS932にマップできません
+		 * 螟画峩繝ｻ繧ｯ繝ｪ繧ｨ繧､繝?繧｣繝悶ち繝悶?ｮ險ｭ螳壹ｒ縺薙％縺ｫ遘ｻ蜍輔?? 螟画峩繝ｻsetBlockTextureName縺ｮ繝峨Γ繧､繝ｳ驛ｨ蛻?繧樽odID縺ｫ螟画峩縲?
+		                 ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Block\BlockWand.java:20: エラー: この文字は、エンコーディングMS932にマップできません
+		 * 螟画峩繝ｻ繧ｯ繝ｪ繧ｨ繧､繝?繧｣繝悶ち繝悶?ｮ險ｭ螳壹ｒ縺薙％縺ｫ遘ｻ蜍輔?? 螟画峩繝ｻsetBlockTextureName縺ｮ繝峨Γ繧､繝ｳ驛ｨ蛻?繧樽odID縺ｫ螟画峩縲?
+		                         ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Block\BlockWand.java:20: エラー: この文字は、エンコーディングMS932にマップできません
+		 * 螟画峩繝ｻ繧ｯ繝ｪ繧ｨ繧､繝?繧｣繝悶ち繝悶?ｮ險ｭ螳壹ｒ縺薙％縺ｫ遘ｻ蜍輔?? 螟画峩繝ｻsetBlockTextureName縺ｮ繝峨Γ繧､繝ｳ驛ｨ蛻?繧樽odID縺ｫ螟画峩縲?
+		                                         ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Block\BlockWand.java:20: エラー: この文字は、エンコーディングMS932にマップできません
+		 * 螟画峩繝ｻ繧ｯ繝ｪ繧ｨ繧､繝?繧｣繝悶ち繝悶?ｮ險ｭ螳壹ｒ縺薙％縺ｫ遘ｻ蜍輔?? 螟画峩繝ｻsetBlockTextureName縺ｮ繝峨Γ繧､繝ｳ驛ｨ蛻?繧樽odID縺ｫ螟画峩縲?
+		                                          ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Block\BlockWand.java:20: エラー: この文字は、エンコーディングMS932にマップできません
+		 * 螟画峩繝ｻ繧ｯ繝ｪ繧ｨ繧､繝?繧｣繝悶ち繝悶?ｮ險ｭ螳壹ｒ縺薙％縺ｫ遘ｻ蜍輔?? 螟画峩繝ｻsetBlockTextureName縺ｮ繝峨Γ繧､繝ｳ驛ｨ蛻?繧樽odID縺ｫ螟画峩縲?
+		                                                                                ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Block\BlockWand.java:20: エラー: この文字は、エンコーディングMS932にマップできません
+		 * 螟画峩繝ｻ繧ｯ繝ｪ繧ｨ繧､繝?繧｣繝悶ち繝悶?ｮ險ｭ螳壹ｒ縺薙％縺ｫ遘ｻ蜍輔?? 螟画峩繝ｻsetBlockTextureName縺ｮ繝峨Γ繧､繝ｳ驛ｨ蛻?繧樽odID縺ｫ螟画峩縲?
+		                                                                                             ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Block\BlockWand.java:25: エラー: この文字は、エンコーディングMS932にマップできません
+		setHardness(0F);/* 遑ｬ縺? */
+		                      ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Block\BlockWand.java:26: エラー: この文字は、エンコーディングMS932にマップできません
+		setResistance(100.0F);/* 辷?遐ｴ閠先?ｧ */
+		                          ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Block\BlockWand.java:26: エラー: この文字は、エンコーディングMS932にマップできません
+		setResistance(100.0F);/* 辷?遐ｴ閠先?ｧ */
+		                               ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Block\BlockWand.java:47: エラー: この文字は、エンコーディングMS932にマップできません
+	/** 蜑企勁繝ｻ繝?繝舌ャ繧ｯ繧ｳ繝ｼ繝? */
+	          ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Block\BlockWand.java:47: エラー: この文字は、エンコーディングMS932にマップできません
+	/** 蜑企勁繝ｻ繝?繝舌ャ繧ｯ繧ｳ繝ｼ繝? */
+	                     ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:34: エラー: この文字は、エンコーディングMS932にマップできません
+ * 逋ｺ蟆?縺輔ｌ繧九お繝ｳ繝?繧｣繝?繧｣縺ｮ繧ｯ繝ｩ繧ｹ縲?
+      ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:34: エラー: この文字は、エンコーディングMS932にマップできません
+ * 逋ｺ蟆?縺輔ｌ繧九お繝ｳ繝?繧｣繝?繧｣縺ｮ繧ｯ繝ｩ繧ｹ縲?
+                ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:34: エラー: この文字は、エンコーディングMS932にマップできません
+ * 逋ｺ蟆?縺輔ｌ繧九お繝ｳ繝?繧｣繝?繧｣縺ｮ繧ｯ繝ｩ繧ｹ縲?
+                    ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:34: エラー: この文字は、エンコーディングMS932にマップできません
+ * 逋ｺ蟆?縺輔ｌ繧九お繝ｳ繝?繧｣繝?繧｣縺ｮ繧ｯ繝ｩ繧ｹ縲?
+                                ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:38: エラー: この文字は、エンコーディングMS932にマップできません
+	/* 蝨ｰ荳ｭ蛻､螳壹↓菴ｿ縺?繧ゅ?ｮ */
+	               ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:38: エラー: この文字は、エンコーディングMS932にマップできません
+	/* 蝨ｰ荳ｭ蛻､螳壹↓菴ｿ縺?繧ゅ?ｮ */
+	                  ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:49: エラー: この文字は、エンコーディングMS932にマップできません
+	/* 縺薙?ｮ蠑ｾ繧呈茶縺｣縺溘お繝ｳ繝?繧｣繝?繧｣ */
+	     ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:49: エラー: この文字は、エンコーディングMS932にマップできません
+	/* 縺薙?ｮ蠑ｾ繧呈茶縺｣縺溘お繝ｳ繝?繧｣繝?繧｣ */
+	                    ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:49: エラー: この文字は、エンコーディングMS932にマップできません
+	/* 縺薙?ｮ蠑ｾ繧呈茶縺｣縺溘お繝ｳ繝?繧｣繝?繧｣ */
+	                        ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:52: エラー: この文字は、エンコーディングMS932にマップできません
+	/* 蝨ｰ荳ｭ繝ｻ遨ｺ荳ｭ縺ｫ縺?繧区凾髢? */
+	                ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:52: エラー: この文字は、エンコーディングMS932にマップできません
+	/* 蝨ｰ荳ｭ繝ｻ遨ｺ荳ｭ縺ｫ縺?繧区凾髢? */
+	                     ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:56: エラー: この文字は、エンコーディングMS932にマップできません
+	/* 繝?繝｡繝ｼ繧ｸ縺ｮ螟ｧ縺阪＆ */
+	    ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:70: エラー: この文字は、エンコーディングMS932にマップできません
+	 * 逋ｺ蟆?縺吶ｋ蠑ｾ繧堤函謌舌?ｻ蛻晄悄繝代Λ繝｡繝ｼ繧ｿ縺ｮ螳夂ｾｩ繧偵☆繧九??
+	      ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:70: エラー: この文字は、エンコーディングMS932にマップできません
+	 * 逋ｺ蟆?縺吶ｋ蠑ｾ繧堤函謌舌?ｻ蛻晄悄繝代Λ繝｡繝ｼ繧ｿ縺ｮ螳夂ｾｩ繧偵☆繧九??
+	                 ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:70: エラー: この文字は、エンコーディングMS932にマップできません
+	 * 逋ｺ蟆?縺吶ｋ蠑ｾ繧堤函謌舌?ｻ蛻晄悄繝代Λ繝｡繝ｼ繧ｿ縺ｮ螳夂ｾｩ繧偵☆繧九??
+	                                          ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:70: エラー: この文字は、エンコーディングMS932にマップできません
+	 * 逋ｺ蟆?縺吶ｋ蠑ｾ繧堤函謌舌?ｻ蛻晄悄繝代Λ繝｡繝ｼ繧ｿ縺ｮ螳夂ｾｩ繧偵☆繧九??
+	                                           ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:73: エラー: この文字は、エンコーディングMS932にマップできません
+	 *            :縺薙?ｮ繝ｯ繝ｼ繝ｫ繝?
+	                 ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:73: エラー: この文字は、エンコーディングMS932にマップできません
+	 *            :縺薙?ｮ繝ｯ繝ｼ繝ｫ繝?
+	                          ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:75: エラー: この文字は、エンコーディングMS932にマップできません
+	 *            :蠑ｾ貅舌→縺ｪ繧九お繝ｳ繝?繧｣繝?繧｣縲ゅ％縺ｮMod縺ｮ蝣ｴ蜷医?∝ｼｾ繧呈茶縺｣縺溘?励Ξ繧､繝､繝ｼ縺後％縺薙↓蜈･繧?
+	                            ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:75: エラー: この文字は、エンコーディングMS932にマップできません
+	 *            :蠑ｾ貅舌→縺ｪ繧九お繝ｳ繝?繧｣繝?繧｣縲ゅ％縺ｮMod縺ｮ蝣ｴ蜷医?∝ｼｾ繧呈茶縺｣縺溘?励Ξ繧､繝､繝ｼ縺後％縺薙↓蜈･繧?
+	                                ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:75: エラー: この文字は、エンコーディングMS932にマップできません
+	 *            :蠑ｾ貅舌→縺ｪ繧九お繝ｳ繝?繧｣繝?繧｣縲ゅ％縺ｮMod縺ｮ蝣ｴ蜷医?∝ｼｾ繧呈茶縺｣縺溘?励Ξ繧､繝､繝ｼ縺後％縺薙↓蜈･繧?
+	                                                 ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:75: エラー: この文字は、エンコーディングMS932にマップできません
+	 *            :蠑ｾ貅舌→縺ｪ繧九お繝ｳ繝?繧｣繝?繧｣縲ゅ％縺ｮMod縺ｮ蝣ｴ蜷医?∝ｼｾ繧呈茶縺｣縺溘?励Ξ繧､繝､繝ｼ縺後％縺薙↓蜈･繧?
+	                                                            ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:75: エラー: この文字は、エンコーディングMS932にマップできません
+	 *            :蠑ｾ貅舌→縺ｪ繧九お繝ｳ繝?繧｣繝?繧｣縲ゅ％縺ｮMod縺ｮ蝣ｴ蜷医?∝ｼｾ繧呈茶縺｣縺溘?励Ξ繧､繝､繝ｼ縺後％縺薙↓蜈･繧?
+	                                                                              ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:77: エラー: この文字は、エンコーディングMS932にマップできません
+	 *            :蠑ｾ縺ｮ騾溷ｺｦ險育ｮ励↓菴ｿ繧上ｌ繧句?､
+	                                   ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:79: エラー: この文字は、エンコーディングMS932にマップできません
+	 *            :蠑ｾ縺ｮ騾溷ｺｦ險育ｮ励↓菴ｿ繧上ｌ繧句?､2
+	                                   ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:81: エラー: この文字は、エンコーディングMS932にマップできません
+	 *            :繝励Ξ繧､繝､繝ｼ縺九ｉ隕九※豌ｴ蟷ｳ譁ｹ蜷代↓縲∫匱蟆?縺吶ｋ蠑ｾ繧偵★繧峨☆(隍?謨ｰ逋ｺ蟆?縺吶ｋ縺ｨ縺阪↑縺ｩ縺ｫ菴ｿ逕ｨ縺吶ｋ)
+	                                           ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:81: エラー: この文字は、エンコーディングMS932にマップできません
+	 *            :繝励Ξ繧､繝､繝ｼ縺九ｉ隕九※豌ｴ蟷ｳ譁ｹ蜷代↓縲∫匱蟆?縺吶ｋ蠑ｾ繧偵★繧峨☆(隍?謨ｰ逋ｺ蟆?縺吶ｋ縺ｨ縺阪↑縺ｩ縺ｫ菴ｿ逕ｨ縺吶ｋ)
+	                                                         ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:81: エラー: この文字は、エンコーディングMS932にマップできません
+	 *            :繝励Ξ繧､繝､繝ｼ縺九ｉ隕九※豌ｴ蟷ｳ譁ｹ蜷代↓縲∫匱蟆?縺吶ｋ蠑ｾ繧偵★繧峨☆(隍?謨ｰ逋ｺ蟆?縺吶ｋ縺ｨ縺阪↑縺ｩ縺ｫ菴ｿ逕ｨ縺吶ｋ)
+	                                                               ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:95: エラー: この文字は、エンコーディングMS932にマップできません
+		// 蛻晄悄迥ｶ諷九〒縺ｮ蜷代″縺ｮ豎ｺ螳?
+		                     ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:108: エラー: この文字は、エンコーディングMS932にマップできません
+		// 蛻晞?溷ｺｦ
+		     ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:117: エラー: この文字は、エンコーディングMS932にマップできません
+	/* dataWatcher繧貞茜逕ｨ縺励◆繧ｵ繝ｼ繝舌?ｻ繧ｯ繝ｩ繧､繧｢繝ｳ繝磯俣縺ｮ蜷梧悄蜃ｦ逅?縺?縺ｨ諤昴≧ */
+	                            ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:117: エラー: この文字は、エンコーディングMS932にマップできません
+	/* dataWatcher繧貞茜逕ｨ縺励◆繧ｵ繝ｼ繝舌?ｻ繧ｯ繝ｩ繧､繧｢繝ｳ繝磯俣縺ｮ蜷梧悄蜃ｦ逅?縺?縺ｨ諤昴≧ */
+	                                                   ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:117: エラー: この文字は、エンコーディングMS932にマップできません
+	/* dataWatcher繧貞茜逕ｨ縺励◆繧ｵ繝ｼ繝舌?ｻ繧ｯ繝ｩ繧､繧｢繝ｳ繝磯俣縺ｮ蜷梧悄蜃ｦ逅?縺?縺ｨ諤昴≧ */
+	                                                     ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:118: エラー: この文字は、エンコーディングMS932にマップできません
+	/** 諱舌ｉ縺終nit縺ｨ縺?縺?蜷榊燕逧?縺ｫ蛻晄悄蛹門?ｦ逅?縺?縺ｨ諤昴ｏ繧後∪縺吶?ゅ?? */
+	               ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:118: エラー: この文字は、エンコーディングMS932にマップできません
+	/** 諱舌ｉ縺終nit縺ｨ縺?縺?蜷榊燕逧?縺ｫ蛻晄悄蛹門?ｦ逅?縺?縺ｨ諤昴ｏ繧後∪縺吶?ゅ?? */
+	                 ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:118: エラー: この文字は、エンコーディングMS932にマップできません
+	/** 諱舌ｉ縺終nit縺ｨ縺?縺?蜷榊燕逧?縺ｫ蛻晄悄蛹門?ｦ逅?縺?縺ｨ諤昴ｏ繧後∪縺吶?ゅ?? */
+	                      ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:118: エラー: この文字は、エンコーディングMS932にマップできません
+	/** 諱舌ｉ縺終nit縺ｨ縺?縺?蜷榊燕逧?縺ｫ蛻晄悄蛹門?ｦ逅?縺?縺ｨ諤昴ｏ繧後∪縺吶?ゅ?? */
+	                              ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:118: エラー: この文字は、エンコーディングMS932にマップできません
+	/** 諱舌ｉ縺終nit縺ｨ縺?縺?蜷榊燕逧?縺ｫ蛻晄悄蛹門?ｦ逅?縺?縺ｨ諤昴ｏ繧後∪縺吶?ゅ?? */
+	                                 ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:118: エラー: この文字は、エンコーディングMS932にマップできません
+	/** 諱舌ｉ縺終nit縺ｨ縺?縺?蜷榊燕逧?縺ｫ蛻晄悄蛹門?ｦ逅?縺?縺ｨ諤昴ｏ繧後∪縺吶?ゅ?? */
+	                                   ^
+D:\C\desktop\meguminMOD\build\sources\java\com\google\kobatokokoa0429\Entity\EntityBarret.java:118: エラー: この文字は、エンコーディングMS932にマップできません
+	/** 諱舌ｉ縺終nit縺ｨ縺?縺?蜷榊燕逧?縺ｫ蛻晄悄蛹門?ｦ逅?縺?縺ｨ諤昴ｏ繧後∪縺吶?ゅ?? */
+	                                              ^
+警告1個
+
+:processResources
+:classes
+:jar
+:compileTestJava UP-TO-DATE
+:processTestResources UP-TO-DATE
+:testClasses UP-TO-DATE
+:test UP-TO-DATE
+:extractMcpData UP-TO-DATE
+:getVersionJson
+:extractUserDev UP-TO-DATE
+:genSrgs SKIPPED
+:reobf
+:assemble
+:check UP-TO-DATE
+:build
 
 BUILD SUCCESSFUL
 
-Total time: 44.521 secs
+Total time: 1 mins 16.207 secs

@@ -21,7 +21,7 @@ public class GuiHandler implements IGuiHandler {
 	@Override
 	public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
 		if (ID == MeguminMOD.GUI_ID) {
-			return new MeguminGUIContainer(x, y, z);
+			return new MeguminGUIContainer();
 		}
 		return null;
 	}

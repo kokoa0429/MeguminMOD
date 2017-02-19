@@ -3,7 +3,9 @@ package com.google.kobatokokoa0429.Block;
 import java.util.Random;
 
 import com.google.kobatokokoa0429.MeguminMOD;
+import com.google.kobatokokoa0429.GUI.MeguminGUIContainer;
 import com.google.kobatokokoa0429.TileEntity.TueTileEntity;
+import com.kamesuta.mc.bnnwidget.render.WGui;
 
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
@@ -24,7 +26,7 @@ public class BlockWand extends BlockContainer {
 		setBlockName("blockTue");
 		setHardness(0F);/* 硬さ */
 		setResistance(100.0F);/* 爆破耐性 */
-		setBlockBounds(0.0F, 0, 0.0F, 1.0F, 3.0F, 1.0F);
+		setBlockBounds(0.1F, 0.1F, 0.1F, 0.9F, 3.0F, 0.9F);
 		setLightLevel(15.0F);
 		setBlockTextureName(MeguminMOD.MOD_ID + ":tue3");
 	}
@@ -41,14 +43,15 @@ public class BlockWand extends BlockContainer {
 
 	@Override
 	public boolean shouldSideBeRendered(IBlockAccess world, int x, int y, int z, int side) {
-		return false;
+		return true;
 	}
 
 	/** 削除・デバックコード */
 	@Override
 	public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float hitX,
 			float hitY, float hitZ) {
-		player.openGui(MeguminMOD.INSTANCE, MeguminMOD.GUI_ID, world, x, y, z);
+		//player.openGui(MeguminMOD.INSTANCE, MeguminMOD.GUI_ID, world, x, y, z);
+		WGui.mc.displayGuiScreen(new MeguminGUIContainer());
 		return true;
 	}
 
@@ -66,4 +69,7 @@ public class BlockWand extends BlockContainer {
 	public TileEntity createNewTileEntity(World world, int par2) {
 		return new TueTileEntity();
 	}
+
+
+
 }

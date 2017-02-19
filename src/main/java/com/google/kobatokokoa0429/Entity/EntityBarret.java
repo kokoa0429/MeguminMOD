@@ -68,7 +68,7 @@ public class EntityBarret extends Entity implements IProjectile {
 
 	/**
 	 * 発射する弾を生成・初期パラメータの定義をする。
-	 * 
+	 *
 	 * @param par1World
 	 *            :このワールド
 	 * @param par2EntityLivingBase
@@ -450,6 +450,7 @@ public class EntityBarret extends Entity implements IProjectile {
 						if (!worldObj.isRemote) {
 
 							Explosion exp = new Explosion();
+
 							exp.bakuretu(shootingEntity, worldObj, xTile, yTile, zTile, 50, 30F);
 
 						}
