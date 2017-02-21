@@ -33,6 +33,8 @@ public class Explosion {
 						b = Math.abs(b - 0.5);
 						b *= b;
 						block_damage += (2 * b);
+						
+						
 
 						if (worldObj.getBlock((xT + x), (yT + y), (zT + z))
 								.getExplosionResistance(shootingEntity) < block_damage * power) {
