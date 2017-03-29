@@ -12,7 +12,7 @@ public class ItemWandStick extends Item {
 	public ItemWandStick() {
 		setUnlocalizedName("itemWandStick");
 		setTextureName(MeguminMOD.MOD_ID + ":tuesutekki");
-		setCreativeTab(MeguminMOD.tabMeguminMod);
+		setCreativeTab(MeguminMOD.tabMeguminMOD);
 		setMaxStackSize(1);
 
 	}

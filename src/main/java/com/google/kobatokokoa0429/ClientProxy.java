@@ -5,10 +5,12 @@ import com.google.kobatokokoa0429.Render.EntityBarretRender;
 import com.google.kobatokokoa0429.Render.Renderitemtue;
 import com.google.kobatokokoa0429.Render.Rendertue;
 import com.google.kobatokokoa0429.TileEntity.TueTileEntity;
+import com.google.kobatokokoa0429.TileEntity.energytile;
 
 import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
+import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -33,13 +35,16 @@ public class ClientProxy extends CommonProxy {
 	 *
 	 * レンダー関係のクラスはクライアント側にしか存在しないため、サーバ側で誤って登録しないよう、（このように）プロキシを通すなどの対策を必ず行います。
 	 */
+
 	@Override
 	public void registerTileEntity() {
 		ClientRegistry.registerTileEntity(TueTileEntity.class, "tue", new Rendertue());
-		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(MeguminMOD.blockTue), new Renderitemtue());
+		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(MeguminMOD.blockWand), new Renderitemtue());
 		MinecraftForgeClient.registerItemRenderer(MeguminMOD.itemWand, new Renderitemtue());
 		RenderingRegistry.registerEntityRenderingHandler(EntityBarret.class, new EntityBarretRender());
 
+		//GameRegistry.registerTileEntity(blockkobatotile.class, "blockkobato");
+		GameRegistry.registerTileEntity(energytile.class, "blockcable");
 	}
 
 	@Override

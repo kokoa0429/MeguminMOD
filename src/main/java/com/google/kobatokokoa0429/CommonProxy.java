@@ -1,6 +1,7 @@
 package com.google.kobatokokoa0429;
 
 import com.google.kobatokokoa0429.TileEntity.TueTileEntity;
+import com.google.kobatokokoa0429.TileEntity.energytile;
 
 import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -23,6 +24,9 @@ public class CommonProxy {
 
 	public void registerTileEntity() {
 		GameRegistry.registerTileEntity(TueTileEntity.class, "tue");
+
+		//GameRegistry.registerTileEntity(blockkobatotile.class, "blockkobato");
+		GameRegistry.registerTileEntity(energytile.class, "blockcable");
 	}
 
 }

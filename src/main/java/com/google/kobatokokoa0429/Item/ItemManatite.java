@@ -15,8 +15,9 @@ public class ItemManatite extends Item {
 	public ItemManatite() {
 		setUnlocalizedName("itemManatite");
 		setTextureName(MeguminMOD.MOD_ID + ":manataito_item");
-		setCreativeTab(MeguminMOD.tabMeguminMod);
+		setCreativeTab(MeguminMOD.tabMeguminMOD);
 		setMaxStackSize(16);
+
 
 	}
 

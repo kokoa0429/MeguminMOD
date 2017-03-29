@@ -13,7 +13,8 @@ public class ItemWandCore extends Item {
 
 		setUnlocalizedName("itemWandCore");
 		setTextureName(MeguminMOD.MOD_ID + ":tueue");
-		setCreativeTab(MeguminMOD.tabMeguminMod);
+		setCreativeTab(MeguminMOD.tabMeguminMOD);
 		setMaxStackSize(16);
+
 	}
 }

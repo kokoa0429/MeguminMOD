@@ -5,24 +5,22 @@ import com.google.kobatokokoa0429.Entity.EntityBarret;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumAction;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.world.World;
 
 public class ItemWand extends ItemSword {
 
-	private float field_150934_a;
 
 	/**
 	 * 変更・クリエイティブタブの設定をここに変更。 変更・setTextureNameの引数のドメイン部分をModIDに
 	 */
 
-	public ItemWand(Item.ToolMaterial par2) {
-		super(par2);
+	public ItemWand() {
+		super(MeguminMOD.manataito);
 		setUnlocalizedName("itemWand");
 		setTextureName(MeguminMOD.MOD_ID + ":iconn");
-		setCreativeTab(MeguminMOD.tabMeguminMod);
+		setCreativeTab(MeguminMOD.tabMeguminMOD);
 		setMaxStackSize(1);
 	}
 
@@ -36,7 +34,7 @@ public class ItemWand extends ItemSword {
 		} else {
 			if (entityplayer.isSneaking()) {
 				if (entityplayer.canPlayerEdit(x, y + 1, z, par7, stack)) {
-					world.setBlock(x, y + 1, z, MeguminMOD.blockTue);
+					world.setBlock(x, y + 1, z, MeguminMOD.blockWand);
 					--stack.stackSize;
 					return true;
 				}

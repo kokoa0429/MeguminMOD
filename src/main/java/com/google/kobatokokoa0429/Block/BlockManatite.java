@@ -15,7 +15,7 @@ public class BlockManatite extends Block {
 		 * 変更・クリエイティブタブの設定をここに変更。 変更・setBlockTextureNameの引数のドメイン部分をModIDに
 		 */
 		super(Material.rock);
-		this.setCreativeTab(MeguminMOD.tabMeguminMod);
+		this.setCreativeTab(MeguminMOD.tabMeguminMOD);
 		this.setHardness(3.0F);
 		this.setBlockTextureName(MeguminMOD.MOD_ID + ":manataito");
 		this.setBlockName("manataito");
